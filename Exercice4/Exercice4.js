@@ -1,5 +1,7 @@
-var Nom = prompt("Quel est votre nom ?");
-var Prenom = prompt("Quel est votre prénom ?");
-var Ville = prompt("Quel est votre ville ?");
-
-alert(Nom + Prenom + Ville);
+function Name() {
+  var lastname = document.getElementById('nom').value;
+  var firstname = document.getElementById('prenom').value;
+  var city = document.getElementById('ville').value;
+  result = ("Nom : " + lastname + '\n' + "Prénom : " + firstname + '\n' + "Ville : " + city);
+  alert(result);
+}

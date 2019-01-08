@@ -1,10 +1,7 @@
-var poiture = prompt("Quelle est votre pointure ?");
-var anneedenaissance = prompt("Quelle est votre année de naissance");
+function calcul() {
+  var nombre1 = document.getElementById('firstNumber').value;
+  var nombre2 = document.getElementById('secondNumber').value;
+  result = parseFloat(nombre1) % parseFloat(nombre2);
 
-  var nombre1 = pointure * 2;
-  var nombre2 = nombre1 + 5;
-  var nombre3 = nombre2 * 50;
-  var nombre4 = nombre3 - anneedenaissance;
-  var nombre5 = nombre4 + 1776;
-
-alert("Le résultat est égal à : " + nombre5);
+  alert(result);
+}
